@@ -54,7 +54,8 @@ final class AgentView extends FrameLayout {
 
     void hideKeyboard() {
         if (input == null) return;
-        InputMethodManager imm = (InputMethodManager) getContext().getSystemService(INPUT_METHOD_SERVICE);
+        InputMethodManager imm = (InputMethodManager)
+                getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
         if (imm != null) imm.hideSoftInputFromWindow(input.getWindowToken(), 0);
     }
 
